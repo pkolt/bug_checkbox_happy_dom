@@ -1,0 +1,91 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > checkbox 1`] = `
+<div>
+  <div
+    id="app"
+  >
+    <form>
+      <fieldset>
+        <legend>
+          Menu
+        </legend>
+        <p
+          class="field"
+        >
+          <input
+            id="id_coffee"
+            name="coffee"
+            type="checkbox"
+          />
+          <label
+            for="id_coffee"
+          >
+            Coffee
+          </label>
+        </p>
+        <p
+          class="field"
+        >
+          <input
+            id="id_tea"
+            name="tea"
+            type="checkbox"
+          />
+          <label
+            for="id_tea"
+          >
+            Tea
+          </label>
+        </p>
+      </fieldset>
+    </form>
+    <p />
+  </div>
+</div>
+`;
+
+exports[`App > render 1`] = `
+<div>
+  <div
+    id="app"
+  >
+    <form>
+      <fieldset>
+        <legend>
+          Menu
+        </legend>
+        <p
+          class="field"
+        >
+          <input
+            id="id_coffee"
+            name="coffee"
+            type="checkbox"
+          />
+          <label
+            for="id_coffee"
+          >
+            Coffee
+          </label>
+        </p>
+        <p
+          class="field"
+        >
+          <input
+            id="id_tea"
+            name="tea"
+            type="checkbox"
+          />
+          <label
+            for="id_tea"
+          >
+            Tea
+          </label>
+        </p>
+      </fieldset>
+    </form>
+    <p />
+  </div>
+</div>
+`;
