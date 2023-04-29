@@ -6,5 +6,10 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'happy-dom',
+    threads: true,
+    isolate: true,
+    clearMocks: true,
+    mockReset: true,
+    setupFiles: ['./src/setupTests.ts'],
   },
 });

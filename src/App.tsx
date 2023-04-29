@@ -16,11 +16,19 @@ const App = () => {
               id="id_coffee"
               onChange={() => setCoffee((state) => !state)}
               checked={coffee}
+              data-testid="coffee"
             />
             <label htmlFor="id_coffee">Coffee</label>
           </p>
           <p className="field">
-            <input type="checkbox" name="tea" id="id_tea" onChange={() => setTea((state) => !state)} checked={tea} />
+            <input
+              type="checkbox"
+              name="tea"
+              id="id_tea"
+              onChange={() => setTea((state) => !state)}
+              checked={tea}
+              data-testid="tea"
+            />
             <label htmlFor="id_tea">Tea</label>
           </p>
         </fieldset>
