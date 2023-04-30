@@ -9,11 +9,19 @@ describe('App', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('select Tea', async () => {
+  it('select checkbox', async () => {
     const { container } = render(<App />);
     const checkbox = screen.getByTestId('tea');
     await userEvent.click(checkbox);
     screen.debug(container);
     expect(container.innerHTML).toMatch('Selected Tea');
+  });
+
+  it('select radio button', async () => {
+    const { container } = render(<App />);
+    const radioBtn = screen.getByTestId('cookie');
+    await userEvent.click(radioBtn);
+    screen.debug(container);
+    expect(container.innerHTML).toMatch('Selected cookie');
   });
 });
