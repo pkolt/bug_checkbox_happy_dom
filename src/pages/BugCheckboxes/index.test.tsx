@@ -1,11 +1,11 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from './App';
+import { BugCheckboxes } from '.';
 
 describe('Test Checkbox', () => {
   it('event onChange', async () => {
-    const { container } = render(<App />);
+    const { container } = render(<BugCheckboxes />);
     const checkbox = screen.getByTestId('tea') as HTMLInputElement;
     await userEvent.click(checkbox);
     expect(container.innerHTML).toMatch('Selected Tea');
@@ -13,7 +13,7 @@ describe('Test Checkbox', () => {
 
   it('event change', async () => {
     const handle = vi.fn();
-    render(<App />);
+    render(<BugCheckboxes />);
     const checkbox = screen.getByTestId('tea') as HTMLInputElement;
     checkbox.addEventListener('change', handle);
     await userEvent.click(checkbox);
@@ -23,7 +23,7 @@ describe('Test Checkbox', () => {
 
 describe('Test Radio button', () => {
   it('event onChange', async () => {
-    const { container } = render(<App />);
+    const { container } = render(<BugCheckboxes />);
     const radioBtn = screen.getByTestId('cookie');
     await userEvent.click(radioBtn);
     expect(container.innerHTML).toMatch('Selected cookie');
@@ -31,7 +31,7 @@ describe('Test Radio button', () => {
 
   it('event change', async () => {
     const handle = vi.fn();
-    render(<App />);
+    render(<BugCheckboxes />);
     const radioBtn = screen.getByTestId('cookie');
     radioBtn.addEventListener('change', handle);
     await userEvent.click(radioBtn);
