@@ -1,3 +1,4 @@
 export enum Page {
-    Checkboxes = '/bug_checkboxes'
+    BugCheckboxes = '/bug_checkboxes',
+    BugMediaQuery = '/bug_media_query',
 }
