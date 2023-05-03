@@ -1,4 +1,4 @@
-# Bug in happy-dom with checkbox ![](https://github.com/pkolt/bug_checkbox_happy_dom/workflows/main/badge.svg)
+# Bug in happy-dom ![](https://github.com/pkolt/bug_checkbox_happy_dom/workflows/main/badge.svg)
 
 ## Install
 
