@@ -1,10 +1,14 @@
 import { Container, Spinner } from './styled';
 import './styled';
 
-export const BugMediaQuery = () => {
+interface BugMediaQueryProps {
+  onClick?: () => void;
+}
+
+export const BugMediaQuery: React.FC<BugMediaQueryProps> = ({ onClick }) => {
   return (
     <Container>
-      <Spinner />
+      <Spinner data-testid="spinner" onClick={onClick} />
     </Container>
   );
 };
